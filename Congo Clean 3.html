@@ -1,0 +1,1668 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Congo Clean 🇨🇩 | Recyclage et transformation des déchets</title><style>
+
+/* ==============================
+   STYLE GENERAL
+============================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f9f6;
+    color:#1f2937;
+    line-height:1.6;
+}
+
+button,
+input,
+select,
+textarea{
+    font:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header{
+
+    background:#087f5b;
+
+    color:white;
+
+    padding:15px 5%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.2);
+
+}
+
+.logo{
+
+    font-size:25px;
+
+    font-weight:bold;
+
+}
+
+.logo span{
+
+    color:#b7f7d5;
+
+}
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+nav button{
+
+    background:transparent;
+
+    border:none;
+
+    color:white;
+
+    font-weight:bold;
+
+    padding:9px 10px;
+
+    border-radius:7px;
+
+}
+
+nav button:hover{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.nav-whatsapp{
+
+    background:#25D366 !important;
+
+    color:white !important;
+
+}
+
+
+/* ==============================
+   HERO
+============================== */
+
+.hero{
+
+    background:
+
+    linear-gradient(
+        rgba(0,85,60,.90),
+        rgba(0,85,60,.90)
+    ),
+
+    linear-gradient(
+        120deg,
+        #0ca678,
+        #087f5b
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:95px 20px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+    margin-bottom:18px;
+
+}
+
+.hero h2{
+
+    font-size:25px;
+
+    color:#b7f7d5;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:19px;
+
+}
+
+.hero-buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-button{
+
+    padding:14px 25px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+.hero-primary{
+
+    background:white;
+
+    color:#087f5b;
+
+}
+
+.hero-whatsapp{
+
+    background:#25D366;
+
+    color:white;
+
+}
+
+
+/* ==============================
+   CONTAINER
+============================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1150px;
+
+    margin:60px auto;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.section-title h2{
+
+    color:#087f5b;
+
+    font-size:32px;
+
+    margin-bottom:8px;
+
+}
+
+.section-title p{
+
+    color:#666;
+
+}
+
+
+/* ==============================
+   CARDS
+============================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.07);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.card-icon{
+
+    font-size:42px;
+
+    margin-bottom:12px;
+
+}
+
+.card h3{
+
+    color:#087f5b;
+
+    margin-bottom:10px;
+
+}
+
+
+/* ==============================
+   A PROPOS
+============================== */
+
+.about-box{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.07);
+
+    text-align:center;
+
+}
+
+.founder-name{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#087f5b;
+
+    margin:15px 0;
+
+}
+
+.about-box p{
+
+    max-width:800px;
+
+    margin:10px auto;
+
+    color:#555;
+
+}
+
+
+/* ==============================
+   IMPACT
+============================== */
+
+.impact{
+
+    background:#e4f7ed;
+
+    padding:50px 20px;
+
+}
+
+.impact-grid{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.impact-box{
+
+    background:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    border-radius:12px;
+
+}
+
+.impact-box strong{
+
+    display:block;
+
+    color:#087f5b;
+
+    font-size:32px;
+
+}
+
+
+/* ==============================
+   ZONES
+============================== */
+
+.zones{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.zone{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:14px;
+
+    border-left:
+    5px solid #087f5b;
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,.07);
+
+}
+
+.zone h3{
+
+    color:#087f5b;
+
+    margin-bottom:10px;
+
+}
+
+.zone button{
+
+    margin-top:15px;
+
+}
+
+
+/* ==============================
+   FORMULAIRES
+============================== */
+
+.form-box{
+
+    background:white;
+
+    max-width:600px;
+
+    margin:30px auto;
+
+    padding:32px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 22px rgba(0,0,0,.08);
+
+}
+
+.form-box h2{
+
+    color:#087f5b;
+
+    margin-bottom:20px;
+
+}
+
+.form-group{
+
+    margin-bottom:18px;
+
+}
+
+label{
+
+    display:block;
+
+    font-weight:bold;
+
+    margin-bottom:7px;
+
+}
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+textarea{
+
+    min-height:100px;
+
+    resize:vertical;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:#087f5b;
+
+}
+
+.primary-btn{
+
+    width:100%;
+
+    background:#087f5b;
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+.primary-btn:hover{
+
+    background:#066b4d;
+
+}
+
+
+/* ==============================
+   CONTACT
+============================== */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+.contact-card{
+
+    background:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.07);
+
+}
+
+.contact-icon{
+
+    font-size:48px;
+
+    margin-bottom:12px;
+
+}
+
+.contact-card h3{
+
+    color:#087f5b;
+
+    margin-bottom:8px;
+
+}
+
+.contact-card p{
+
+    margin-bottom:15px;
+
+    color:#555;
+
+}
+
+.whatsapp-btn{
+
+    display:inline-block;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:13px 20px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+.email-btn{
+
+    display:inline-block;
+
+    background:#087f5b;
+
+    color:white;
+
+    padding:13px 20px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+
+/* ==============================
+   DASHBOARD
+============================== */
+
+.dashboard-header{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,.06);
+
+    margin-bottom:25px;
+
+}
+
+.dashboard-header h2{
+
+    color:#087f5b;
+
+}
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:18px;
+
+    margin-bottom:30px;
+
+}
+
+.stat{
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,.05);
+
+}
+
+.stat strong{
+
+    display:block;
+
+    color:#087f5b;
+
+    font-size:30px;
+
+}
+
+
+/* ==============================
+   DEMANDES
+============================== */
+
+.request{
+
+    background:white;
+
+    padding:20px;
+
+    margin-bottom:15px;
+
+    border-radius:12px;
+
+    border-left:
+    5px solid #087f5b;
+
+    box-shadow:
+    0 3px 12px rgba(0,0,0,.05);
+
+}
+
+.request h3{
+
+    color:#087f5b;
+
+    margin-bottom:8px;
+
+}
+
+.request p{
+
+    margin:5px 0;
+
+}
+
+.status{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+.pending{
+
+    background:#fff3bf;
+
+    color:#8f6500;
+
+}
+
+.completed{
+
+    background:#d3f9d8;
+
+    color:#2b8a3e;
+
+}
+
+.cancelled{
+
+    background:#ffe3e3;
+
+    color:#c92a2a;
+
+}
+
+.request-actions{
+
+    margin-top:15px;
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.secondary-btn{
+
+    background:#e8f5ee;
+
+    color:#087f5b;
+
+    border:none;
+
+    padding:11px 15px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+.danger-btn{
+
+    background:#ffe3e3;
+
+    color:#c92a2a;
+
+    border:none;
+
+    padding:11px 15px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+
+/* ==============================
+   MESSAGES
+============================== */
+
+.success{
+
+    background:#d3f9d8;
+
+    color:#2b8a3e;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    margin-bottom:15px;
+
+}
+
+.error{
+
+    background:#ffe3e3;
+
+    color:#c92a2a;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    margin-bottom:15px;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+/* ==============================
+   WHATSAPP FLOTTANT
+============================== */
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.3);
+
+    z-index:5000;
+
+    border:3px solid white;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer{
+
+    background:#063b2b;
+
+    color:white;
+
+    margin-top:70px;
+
+    padding:50px 20px 25px;
+
+}
+
+.footer-grid{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr 1fr;
+
+    gap:35px;
+
+}
+
+.footer-column h3{
+
+    color:#b7f7d5;
+
+    margin-bottom:15px;
+
+}
+
+.footer-column p{
+
+    color:#d8eee5;
+
+    margin-bottom:8px;
+
+}
+
+.footer-column a{
+
+    display:block;
+
+    color:#d8eee5;
+
+    margin-bottom:9px;
+
+}
+
+.footer-column a:hover{
+
+    color:white;
+
+}
+
+.footer-founder{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    padding-top:25px;
+
+    border-top:
+    1px solid rgba(255,255,255,.2);
+
+}
+
+.footer-founder .name{
+
+    color:#b7f7d5;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    margin-top:7px;
+
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media(max-width:850px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+    nav{
+
+        gap:3px;
+
+    }
+
+    nav button{
+
+        padding:7px;
+
+    }
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .cards,
+    .zones,
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .impact-grid,
+    .stats{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .impact-grid,
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hero{
+
+        padding:70px 15px;
+
+    }
+
+    .hero h1{
+
+        font-size:32px;
+
+    }
+
+    .hero h2{
+
+        font-size:21px;
+
+    }
+
+    .form-box{
+
+        padding:22px;
+
+    }
+
+}
+
+</style></head><body><!-- =====================================
+     HEADER
+===================================== --><header><div class="logo">
+
+    Congo<span>Clean</span> 🇨🇩
+
+</div>
+
+
+<nav>
+
+    <button onclick="showPage('home')">
+        Accueil
+    </button>
+
+    <button onclick="showPage('zones')">
+        📍 Zones
+    </button>
+
+    <button onclick="showPage('contact')">
+        📞 Contact
+    </button>
+
+    <button onclick="showPage('register')">
+        📝 Inscription
+    </button>
+
+    <button onclick="showPage('login')">
+        🔐 Connexion
+    </button>
+
+    <button
+        class="nav-whatsapp"
+        onclick="openWhatsApp()">
+
+        🟢 WhatsApp
+
+    </button>
+
+    <button onclick="logout()">
+        Déconnexion
+    </button>
+
+</nav>
+
+</header><!-- =====================================
+     ACCUEIL
+===================================== --><section id="homePage"><div class="hero">
+
+    <h1>
+        Congo Clean 🇨🇩
+    </h1>
+
+    <h2>
+        Ensemble pour un Congo plus propre
+    </h2>
+
+    <p>
+
+        Nous collectons, trions et transformons
+        les déchets plastiques afin de leur donner
+        une seconde vie et de contribuer à la
+        protection de notre environnement.
+
+    </p>
+
+
+    <div class="hero-buttons">
+
+        <button
+            class="hero-button hero-primary"
+            onclick="showPage('register')">
+
+            📝 Rejoindre Congo Clean
+
+        </button>
+
+
+        <button
+            class="hero-button hero-whatsapp"
+            onclick="openWhatsApp()">
+
+            🟢 Nous contacter sur WhatsApp
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MISSION -->
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>
+            ♻️ Notre mission
+        </h2>
+
+        <p>
+            Transformer les déchets en opportunités.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="card-icon">
+                🧴
+            </div>
+
+            <h3>
+                Collecte
+            </h3>
+
+            <p>
+
+                Nous facilitons la récupération
+                des bouteilles et déchets plastiques
+                auprès des citoyens et entreprises.
+
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🚚
+            </div>
+
+            <h3>
+                Tri et récupération
+            </h3>
+
+            <p>
+
+                Les déchets collectés sont regroupés,
+                triés et préparés pour leur transformation.
+
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🏭
+            </div>
+
+            <h3>
+                Transformation
+            </h3>
+
+            <p>
+
+                Les plastiques peuvent être transformés
+                en matières premières ou en produits utiles.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- A PROPOS DU FONDATEUR -->
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2>
+            👨🏾‍💻 À propos du projet
+        </h2>
+
+    </div>
+
+
+    <div class="about-box">
+
+        <div style="font-size:55px;">
+            🇨🇩
+        </div>
+
+        <div class="founder-name">
+
+            Ir. KIBOKO Caleb Joël
+
+        </div>
+
+        <p>
+
+            Porteur du projet <strong>Congo Clean</strong>,
+            une initiative dédiée à la collecte,
+            à la valorisation et à la transformation
+            des déchets plastiques.
+
+        </p>
+
+        <p>
+
+            L'objectif est de contribuer à un environnement
+            plus propre tout en créant de nouvelles
+            opportunités économiques autour du recyclage.
+
+        </p>
+
+
+        <button
+            class="whatsapp-btn"
+            onclick="openWhatsApp()">
+
+            🟢 Contacter le responsable
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- IMPACT -->
+
+<div class="impact">
+
+    <div class="section-title">
+
+        <h2>
+            🌍 Notre impact
+        </h2>
+
+        <p>
+            Chaque déchet récupéré est un pas vers un environnement plus propre.
+        </p>
+
+    </div>
+
+
+    <div class="impact-grid">
+
+        <div class="impact-box">
+
+            🧴
+
+            <strong id="totalBottles">
+                0
+            </strong>
+
+            Bouteilles
+
+        </div>
+
+
+        <div class="impact-box">
+
+            ♻️
+
+            <strong id="totalKg">
+                0
+            </strong>
+
+            Kg collectés
+
+        </div>
+
+
+        <div class="impact-box">
+
+            👥
+
+            <strong id="totalUsers">
+                0
+            </strong>
+
+            Utilisateurs
+
+        </div>
+
+
+        <div class="impact-box">
+
+            📦
+
+            <strong id="totalRequests">
+                0
+            </strong>
+
+            Demandes
+
+        </div>
+
+    </div>
+
+</div>
+
+</section><!-- =====================================
+     ZONES
+===================================== --><section id="zonesPage" class="container hidden"><div class="section-title">
+
+    <h2>
+        📍 Zones de collecte
+    </h2>
+
+    <p>
+        Sélectionnez une zone pour participer au programme.
+    </p>
+
+</div>
+
+
+<div class="zones">
+
+
+    <div class="zone">
+
+        <h3>
+            📍 Ngaliema
+        </h3>
+
+        <p>
+            Collecte et sensibilisation communautaire.
+        </p>
+
+        <button
+            class="secondary-btn"
+            onclick="selectZone('Ngaliema')">
+
+            Choisir
+
+        </button>
+
+    </div>
+
+
+    <div class="zone">
+
+        <h3>
+            📍 Gombe
+        </h3>
+
+        <p>
+            Particuliers, entreprises et institutions.
+        </p>
+
+        <button
+            class="secondary-btn"
+            onclick="selectZone('Gombe')">
+
+            Choisir
+
+        </button>
+
+    </div>
+
+
+    <div class="zone">
+
+        <h3>
+            📍 Limete
+        </h3>
+
+        <p>
+            Collecte et regroupement des plastiques.
+        </p>
+
+        <button
+            class="secondary-btn"
+            onclick="selectZone('Limete')">
+
+            Choisir
+
+        </button>
+
+    </div>
+
+
+    <div class="zone">
+
+        <h3>
+            📍 Masina
+        </h3>
+
+        <p>
+            Développement des points de collecte.
+        </p>
+
+        <button
+            class="secondary-btn"
+            onclick="selectZone('Masina')">
+
+            Choisir
+
+        </button>
+
+    </div>
+
+
+    <div class="zone">
+
+        <h3>
+            📍 Kasa-Vubu
+        </h3>
+
+        <p>
+            Récupération et tri des déchets plastiques.
+        </p>
+
+        <button
+            class="secondary-btn"
+            onclick="selectZone('Kasa-Vubu')">
+
+            Choisir
+
+        </button>
+
+    </div>
+
+
+    <div class="zone">
+
+        <h3>
+            📍 Autres zones
+        </h3>
+
+        <p>
+            Congo Clean pourra progressivement
+            étendre ses activités.
+        </p>
+
+        <button
+            class="secondary-btn"
+            onclick="openWhatsApp()">
+
+            Nous contacter
+
+        </button>
+
+    </div>
+
+</div>
+
+</section><!-- =====================================
+     INSCRIPTION
+===================================== --><section id="registerPage" class="container hidden"><div class="form-box">
+
+    <h2>
+        📝 Créer votre compte
+    </h2>
+
+    <div id="registerMessage"></div>
+
+
+    <form onsubmit="register(event)">
+
+        <div class="form-group">
+
+            <label>
+                Nom complet
+            </label>
+
+            <input
+                type="text"
+                id="registerName"
+                placeholder="Ex : Jean Mukendi"
+                required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Téléphone
+            </label>
+
+            <input
+                type="tel"
+                id="registerPhone"
+                placeholder="Ex : +243..."
+                required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="registerEmail"
+                placeholder="Ex : jean@email.com"
+                required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Commune / Quartier
+            </label>
+
+            <input
+                type="text"
+                id="registerAddress"
+                placeholder="Ex : Ngaliema"
+                required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Type de compte
+            </label>
+
+            <select id="registerRole">
+
+                <option value="citizen">
+                    👤 Citoyen
+                </option>
+
+                <option value="collector">
+                    🚚 Collecteur
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Mot de passe
+            </label>
+
+            <input
+                type="password"
+                id="registerPassword"
+                minlength="4"
+                placeholder="Minimum 4 caractères"
+                required>
+
+        </div>
+
+
+        <button class="primary-btn">
+
+            Créer mon compte ♻️
+
+        </button>
+
+    </form>
+
+</div>
+
+</secti
